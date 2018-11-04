@@ -10,15 +10,14 @@ where applicable.
 
 
 ## Project level
-0. **Choice one**  
+1. **Choice one**  
 Choice desciption... long description long description long description long 
 description long description long description long description long description 
-long description. See [this link](url) (url_text).
->
-"quoted text long quoted text long quoted text long quoted text long quoted text long quoted text long quoted text long quoted text long quoted text long quoted text"
-
-
-0. **Choice two**  
+long description. See [complete_url](complete_url). 
+    > test block quote
+    > end of quote
+    
+1. **Yet another choice**  
 Choice two description
 
 ### Source level
