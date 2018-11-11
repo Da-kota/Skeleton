@@ -1,2 +1,3 @@
 demo_gcov/bin
 demo_gcov/build
+demo_gcov/set_unittestlib_path.bat
