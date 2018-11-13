@@ -14,5 +14,6 @@ cd unittest
 cmake -GNinja -DUNITTEST=ON ..\..
 ninja
 ninja test
+ninja CodeCoverage
 
 popd

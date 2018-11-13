@@ -14,17 +14,17 @@ set (unittest_sources
     "calculation_tests.cpp"
 )
 
-# Prevent some warnings that come from cpputest project files
-add_compile_options(-Wno-long-long -Wno-c++14-compat)
-
 # Build the tests
 add_executable(${PROJECT_NAME} ${unittest_sources})
+
+# Prevent some warnings that come from cpputest project files
+target_compile_options(${PROJECT_NAME} PRIVATE -Wno-long-long -Wno-c++14-compat)
 
 # Execute the tests
 add_test(NAME unittests COMMAND ${PROJECT_NAME})
 
 # Include and link firmware stuff
-include_directories(../hdr)
+include_directories(../src/hdr)
 target_link_libraries(${PROJECT_NAME} CALCULATION_LIB)
 
 # Include and link CPPUTEST stuff
