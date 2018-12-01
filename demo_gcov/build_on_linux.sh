@@ -19,6 +19,7 @@ do_build()
     ninja test
     ninja CodeCoverage
     
+    cd "${cmake_root_dir}"
     wait                            # for all background jobs to finish
   fi
 }
