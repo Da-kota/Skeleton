@@ -10,7 +10,7 @@ do_build()
     cd "${release_dir}"
     
     cmake -GNinja "${cmake_root_dir}"
-    ninja &                             # no reason to wait for it
+    ninja &                             # no reason to wait for it here
 
     cd "${test_dir}"
     
@@ -18,6 +18,8 @@ do_build()
     ninja
     ninja test
     ninja CodeCoverage
+    
+    wait                            # for all background jobs to finish
   fi
 }
   
