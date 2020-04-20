@@ -1,0 +1,5 @@
+build_dir/
+build/
+*.swp
+cscope.*
+tags
