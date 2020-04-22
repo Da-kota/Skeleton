@@ -3,7 +3,7 @@
 
 # (1) CMake definitions, compiler flags and useful variables
 
-cmake_minimum_required ( VERSION 3.9)               # for static test interface
+cmake_minimum_required ( VERSION 3.9)              # for static test interface
 
 project (
     "CppUTest_tut"
@@ -20,9 +20,9 @@ set ( unit_test_dir     unit_tests )
 
 include ( compiler_warnings.cmake)
 set_compiler_warnings ( compiler_warnings)
-                                                # All targets written in C++11
+										    # Select default required standard
 set (   CMAKE_CXX_STANDARD_REQUIRED     ON  )
-set (   CMAKE_CXX_STANDARD              11  )
+set (   CMAKE_CXX_STANDARD              17  )
 set (   tab_width                       4   )       # for HTML coverage report
 
 #      -      -      -      -      -      -      -      -      -      -      -
