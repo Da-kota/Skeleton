@@ -10,6 +10,7 @@ function ( set_compiler_warnings    warnings)
                 -Wextra
                 -Werror
                 -pedantic
+				-Wno-unused-value
         )
 
     elseif ( "${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")

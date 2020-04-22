@@ -1,0 +1,5 @@
+class dummy
+{
+public:
+	dummy() ;
+};

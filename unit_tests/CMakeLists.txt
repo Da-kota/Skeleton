@@ -27,10 +27,11 @@ target_link_directories (
 
 target_link_libraries (
     ${test_app_name}
-        $<$<BOOL:test_coverage>:gcov>     # Link against gcov if measuring coverage.
+        $<$<BOOL:test_coverage>:gcov> # Link against gcov if measuring coverage.
         ${CPPUTEST_LDFLAGS}
         ${app_lib_name}
 )
+
 
 # -----------------------------------------------------------------------------
 

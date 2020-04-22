@@ -4,8 +4,7 @@
 
 set (
     app_lib_source
-        Summator_limited.cpp
-        Gain_limited.cpp
+		dummy.cpp
 )
 
 add_library (
@@ -16,6 +15,7 @@ add_library (
         ${app_lib_source}
 )
 
+
 set_target_properties (
     ${app_lib_name}
         PROPERTIES
@@ -25,6 +25,7 @@ set_target_properties (
                 "${cpplint_cmd}"
 )
 
+
 target_compile_options (
     ${app_lib_name}
     # PUBLIC means these options will also be added to linking targets
@@ -32,6 +33,7 @@ target_compile_options (
             ${compiler_warnings}
             $<$<BOOL:test_coverage>:${compiler_coverage_options}>
 )
+
 
 # -----------------------------------------------------------------------------
 
@@ -47,3 +49,4 @@ target_link_libraries (
         $<$<BOOL:test_coverage>:gcov> # Link against gcov if measuring coverage
         ${app_lib_name}
 )
+
