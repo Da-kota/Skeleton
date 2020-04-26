@@ -1,3 +1,4 @@
+
 option ( static_checking    "Do static checks."     ON  )
 option ( unit_testing       "Do unit testing."      ON  )
 
@@ -23,9 +24,10 @@ if ( unit_testing)
 
     if ( test_coverage)
         include                         ( test_coverage.cmake           )
+        set_compiler_coverage_options   ( compiler_coverage_options     )
+        set_linker_coverage_options     ( linker_coverage_options       )
         set_gcov_tool                   ( gcov_tool                     )
         set_lcov_tool                   ( lcov_tool                     )
-        set_compiler_coverage_options   ( compiler_coverage_options     )
 
         message ( STATUS "Found gcov as: ${gcov_tool}"          )
         message ( STATUS "Found lcov as: ${lcov_tool}"          )

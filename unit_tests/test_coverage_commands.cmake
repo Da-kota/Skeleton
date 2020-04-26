@@ -22,8 +22,10 @@ add_custom_command (
 
     COMMAND
         ${lcov_tool}
+			--no-external
             --capture
             --directory         ../${source_dir}/CMakeFiles/${app_lib_name}.dir
+			--base-directory    ../../${source_dir}
             --output-file       ${coverage_data_file}
 
     COMMAND                                            # Show coverage summary.

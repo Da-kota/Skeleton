@@ -14,6 +14,8 @@ function ( set_gcov_tool tool_path)
     endif()
 endfunction()
 
+#     -     -     -     -     -     -     -     -     -     -     -     -     -
+
 function ( set_lcov_tool tool_path)
     find_program (
         ${tool_path}
@@ -30,13 +32,25 @@ function ( set_lcov_tool tool_path)
     endif()
 endfunction()
 
+#     -     -     -     -     -     -     -     -     -     -     -     -     -
+
 function ( set_compiler_coverage_options    options)
-    set (               # If measuring coverage, these are the options to use.
+    set (               # define compiler options for coverage measurement.
         ${options}
-            -g
-            -O0
-            -fprofile-arcs
-            -ftest-coverage
+			-g			# add debug info
+			-Og         # -Og recomm. by GNU for optimum debugging experience.
+			--coverage  # synonym for -fprofile-arcs -ftest-coverage
+						# (when compiling) and -lgcov (when linking).
+
+        PARENT_SCOPE
+    )
+endfunction()
+
+function ( set_linker_coverage_options    options)
+    set (               # define linker options for coverage measurement.
+        ${options}
+			--coverage  # synonym for -lgcov
+
         PARENT_SCOPE
     )
 endfunction()

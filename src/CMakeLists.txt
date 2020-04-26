@@ -25,13 +25,18 @@ set_target_properties (
                 "${cpplint_cmd}"
 )
 
-
 target_compile_options (
     ${app_lib_name}
     # PUBLIC means these options will also be added to linking targets
         PUBLIC
             ${compiler_warnings}
             $<$<BOOL:test_coverage>:${compiler_coverage_options}>
+)
+
+target_link_options (
+	${app_lib_name}
+		PUBLIC
+			$<$<BOOL:test_coverage>:${linker_coverage_options}>
 )
 
 
@@ -46,7 +51,6 @@ add_executable (
 
 target_link_libraries (
     ${app_name}
-        $<$<BOOL:test_coverage>:gcov> # Link against gcov if measuring coverage
         ${app_lib_name}
 )
 

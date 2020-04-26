@@ -27,11 +27,9 @@ target_link_directories (
 
 target_link_libraries (
     ${test_app_name}
-        $<$<BOOL:test_coverage>:gcov> # Link against gcov if measuring coverage.
         ${CPPUTEST_LDFLAGS}
         ${app_lib_name}
 )
-
 
 # -----------------------------------------------------------------------------
 
@@ -48,7 +46,6 @@ add_custom_command (                                                 # test run
 # Conditionally review the test coverage after the tests have run.
 
 if ( test_coverage)
-
     include ( test_coverage_commands.cmake)
 
     if ( HTML_coverage_report)
