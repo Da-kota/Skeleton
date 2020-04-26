@@ -1,4 +1,6 @@
-set ( coverage_report_dir       coverage_report_HTML    )
+
+set ( coverage_report_dir       coverage_report_HTML                  )
+set ( landing_page              ${coverage_report_dir}/src/index.html )
 
 add_custom_command (
     TARGET
@@ -14,7 +16,7 @@ add_custom_command (
 
     COMMAND
         ${open_html_report_tool}
-            ${coverage_report_dir}/index.html
+			${landing_page}
 
     VERBATIM
     POST_BUILD
