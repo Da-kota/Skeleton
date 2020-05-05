@@ -1,5 +1,5 @@
 class dummy
 {
 public:
-	dummy() ;
+    dummy() ;
 };

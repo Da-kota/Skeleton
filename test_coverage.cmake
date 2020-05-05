@@ -37,10 +37,10 @@ endfunction()
 function ( set_compiler_coverage_options    options)
     set (               # define compiler options for coverage measurement.
         ${options}
-			-g			# add debug info
-			-Og         # -Og recomm. by GNU for optimum debugging experience.
-			--coverage  # synonym for -fprofile-arcs -ftest-coverage
-						# (when compiling) and -lgcov (when linking).
+            -g          # add debug info
+            -Og         # -Og recomm. by GNU for optimum debugging experience.
+            --coverage  # synonym for -fprofile-arcs -ftest-coverage
+                        # (when compiling) and -lgcov (when linking).
 
         PARENT_SCOPE
     )
@@ -49,7 +49,7 @@ endfunction()
 function ( set_linker_coverage_options    options)
     set (               # define linker options for coverage measurement.
         ${options}
-			--coverage  # synonym for -lgcov
+            --coverage  # synonym for -lgcov
 
         PARENT_SCOPE
     )

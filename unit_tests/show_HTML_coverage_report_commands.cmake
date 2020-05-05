@@ -16,7 +16,7 @@ add_custom_command (
 
     COMMAND
         ${open_html_report_tool}
-			${landing_page}
+            ${landing_page}
 
     VERBATIM
     POST_BUILD
