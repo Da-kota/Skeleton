@@ -4,7 +4,8 @@
 
 set (
     app_lib_source
-		dummy.cpp
+        Gain_limited.cpp
+        Summator_limited
 )
 
 add_library (
@@ -34,9 +35,9 @@ target_compile_options (
 )
 
 target_link_options (
-	${app_lib_name}
-		PUBLIC
-			$<$<BOOL:test_coverage>:${linker_coverage_options}>
+    ${app_lib_name}
+        PUBLIC
+            $<$<BOOL:test_coverage>:${linker_coverage_options}>
 )
 
 

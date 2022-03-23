@@ -1,0 +1,31 @@
+[
+{
+  "directory": "/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/build_dir",
+  "command": "/usr/bin/c++      -Wall -Wextra -Werror -pedantic -Wno-unused-value -g -Og --coverage -std=gnu++17 -o src/CMakeFiles/the_app_as_lib.dir/Gain_limited.cpp.o -c \"/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/src/Gain_limited.cpp\"",
+  "file": "/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/src/Gain_limited.cpp"
+},
+
+{
+  "directory": "/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/build_dir",
+  "command": "/usr/bin/c++      -Wall -Wextra -Werror -pedantic -Wno-unused-value -g -Og --coverage -std=gnu++17 -o src/CMakeFiles/the_app_as_lib.dir/Summator_limited.cpp.o -c \"/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/src/Summator_limited.cpp\"",
+  "file": "/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/src/Summator_limited.cpp"
+},
+
+{
+  "directory": "/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/build_dir",
+  "command": "/usr/bin/c++      -Wall -Wextra -Werror -pedantic -Wno-unused-value -g -Og --coverage -std=gnu++17 -o src/CMakeFiles/the_app.dir/main.cpp.o -c \"/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/src/main.cpp\"",
+  "file": "/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/src/main.cpp"
+},
+
+{
+  "directory": "/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/build_dir",
+  "command": "/usr/bin/c++   -I../unit_tests/../src    -Wall -Wextra -Werror -pedantic -Wno-unused-value -g -Og --coverage -std=gnu++17 -o unit_tests/CMakeFiles/the_app_tests.dir/test_harness.cpp.o -c \"/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/unit_tests/test_harness.cpp\"",
+  "file": "/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/unit_tests/test_harness.cpp"
+},
+
+{
+  "directory": "/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/build_dir",
+  "command": "/usr/bin/c++   -I../unit_tests/../src    -Wall -Wextra -Werror -pedantic -Wno-unused-value -g -Og --coverage -std=gnu++17 -o unit_tests/CMakeFiles/the_app_tests.dir/test_runner.cpp.o -c \"/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/unit_tests/test_runner.cpp\"",
+  "file": "/home/Silver_16/andreas/Portable/Documents/# Reference/# Projects/# Programming/cpputest_tut/unit_tests/test_runner.cpp"
+}
+]

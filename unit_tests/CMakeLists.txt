@@ -19,15 +19,8 @@ target_include_directories (
         ../${source_dir}
 )
 
-target_link_directories (
-    ${test_app_name}
-    PRIVATE
-        ${CPPUTEST_LIBRARIES}
-)
-
 target_link_libraries (
     ${test_app_name}
-        ${CPPUTEST_LDFLAGS}
         ${app_lib_name}
 )
 
